@@ -1,8 +1,8 @@
 from setuptools import setup, Extension
 
-dash_hash_module = Extension('dash_hash',
-                                 sources = ['dashmodule.c',
-                                            'dash.c',
+diabase_hash_module = Extension('diabase_hash',
+                                 sources = ['diabasemodule.c',
+                                            'diabase.c',
                                             'sha3/blake.c',
                                             'sha3/bmw.c',
                                             'sha3/groestl.c',
@@ -16,7 +16,7 @@ dash_hash_module = Extension('dash_hash',
                                             'sha3/shavite.c'],
                                include_dirs=['.', './sha3'])
 
-setup (name = 'dash_hash',
+setup (name = 'diabase_hash',
        version = '1.4.0',
-       description = 'Binding for Dash X11 proof of work hashing.',
-       ext_modules = [dash_hash_module])
+       description = 'Binding for Diabase X11 proof of work hashing.',
+       ext_modules = [diabase_hash_module])
